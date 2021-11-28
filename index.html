@@ -1,0 +1,51 @@
+<html>
+<head> <title>Family Book</title></head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<body>
+    <h1> Family Book</h1>
+    <img id="a1" src="https://lh3.googleusercontent.com/proxy/uxbwJ5Xh04gVMMRx1W3VvcdfzoFbstA2XJX-BuAwsNX3kbwW5se8oIJ5Xl961UJm8YWHx1tsY0Q57vhEOYqOUgwtcmBELCo">
+    <h2 id="empty"></h2>
+
+    <button onclick="update()" >Next</button>
+
+</body>
+
+
+
+<script>
+    var updatedimg= [
+    "https://image.freepik.com/free-vector/cartoon-black-girl-illustration_52683-58098.jpg" ,
+    "https://www.clipartmax.com/png/middle/53-530613_cartoon-baby-girl-pictures-9-buy-clip-art-clip-art-baby-black.png" ,
+    "https://folakemi.files.wordpress.com/2016/06/young-black-girl-cartoon.jpg" ,
+    "https://img.huffingtonpost.com/asset/5ca49b762400003601043d18.jpeg?ops=scalefit_720_noupscale" ,
+    "https://t3.ftcdn.net/jpg/02/42/42/18/360_F_242421810_7pfAFTHG0xCOo55FuU6lS18mnxaj4iZ2.jpg" ,
+    ];
+
+
+    var updatednames= [ 
+    "AMANI",
+    "RACHEL",
+    "MOM",
+    "DAD",
+    "REANNA",
+    ];
+
+
+    i=0;
+   function update(){
+    document.getElementById("a1").src= updatedimg[i];
+    document.getElementById("empty").innerHTML= updatednames[i];
+    i++;
+    
+   }
+    
+    
+
+   if( i>4){
+        i==0;
+    }
+
+</script>
+
+</html>
